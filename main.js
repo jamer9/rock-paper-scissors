@@ -28,28 +28,28 @@ function playRound (playerChoice, computerChoice) {
         return 'Tie, choose again';
     }
     else if (playerChoice == 'rock' && computerChoice == 'paper') {
+        playerScore +=1;
         return 'You win! Rock beats paper.';
-        playerScore += 1;
     }  
     else if (playerChoice == 'paper' && computerChoice == 'rock') {
+        computerScore +=1;
         return 'You lose! Rock beats paper.';
-        computerScore += 1;
     }
     else if (playerChoice == 'scissors' && computerChoice == 'paper') {
+        playerScore +=1;
         return 'You win! Scissors beats paper.';
-        playerScore += 1;
     }
     else if (playerChoice == 'paper' && computerChoice == 'scissors') {
+        computerScore +=1;
         return 'You lose! Scissors beats paper.';
-        computerScore += 1;
     }
     else if (playerChoice == 'scissors' && computerChoice == 'rock') {
+        computerScore +=1;
         return 'You lose! Rock beats scissors.';
-        computerScore += 1;
     }
     else if (playerChoice == 'rock' && computerChoice == 'scissors') {
+        playerScore +=1;
         return 'You win! Rock beats scissors.';
-        playerScore += 1;
     }
 }
 /*
@@ -82,7 +82,7 @@ function game () {
     }
 }
 
-game();
+console.log(game());
 //get user input
 
 
