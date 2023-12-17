@@ -1,7 +1,7 @@
 
 //function that randomly generates rock, paper, or scissors
 function getComputerChoice () {
-    let number = floor(Math.random() * 10 + 1) * 3;
+    let number = Math.floor(Math.random() * 10 + 1) * 3;
     console.log(number);
     let choice;
     if (number <= 10) {
