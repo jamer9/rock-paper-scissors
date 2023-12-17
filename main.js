@@ -67,9 +67,9 @@ console.log(playRound(playerSelection, computerSelection));
 function game () {
     while (playerScore < 5 && computerScore < 5) {
         playerChoice = prompt('Enter your choice:').toLowerCase();
-        console.log(playerChoice);
+        console.log('Player choice:', playerChoice);
         computerChoice = getComputerChoice();
-        console.log(computerChoice);
+        console.log('Computer choice:', computerChoice);
         console.log(playRound(playerChoice, computerChoice));
         console.log('Player score:', playerScore);
         console.log('Computer score:', computerScore);
